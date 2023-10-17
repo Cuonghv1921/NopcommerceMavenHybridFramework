@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <listeners>
+        <listener class-name="reportConfig.AllureTestListener" />
+    </listeners>
+<!--    <test name="NopcommerceHybridFramework">-->
+<!--        <parameter name="browserName" value="chrome" />-->
+<!--        <parameter name="pageUrl" value="https://demo.nopcommerce.com/" />-->
+<!--        <classes>-->
+<!--            <class name="featureRegister.Register_01" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="NopcommerceHybridFramework">
+        <parameter name="browserName" value="chrome" />
+        <parameter name="pageUrl" value="https://demo.nopcommerce.com/" />
+        <classes>
+            <class name="testcases.featureDisplayProducts.Paging_01" />
+        </classes>
+    </test>
+</suite>
